@@ -47,4 +47,14 @@ public class Convertidor {
         System.out.printf("Centímetros: %.2f cm%n", centimetros);
         System.out.printf("Pulgadas: %.2f in%n", pulgadas);
     }
+
+    // Conversión de masa
+    public static void convertirMasa(Scanner scanner) {
+        System.out.print("Ingrese la masa en kilogramos: ");
+        double kilogramos = scanner.nextDouble();
+        double libras = kilogramos * 2.20462;
+        double gramos = kilogramos * 1000;
+        System.out.printf("Libras: %.2f lb%n", libras);
+        System.out.printf("Gramos: %.2f g%n", gramos);
+    }
 }            
