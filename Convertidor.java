@@ -57,4 +57,12 @@ public class Convertidor {
         System.out.printf("Libras: %.2f lb%n", libras);
         System.out.printf("Gramos: %.2f g%n", gramos);
     }
+
+     // Conversión de velocidad
+    public static void convertirVelocidad(Scanner scanner) {
+        System.out.print("Ingrese la velocidad en metros/segundo: ");
+        double metrosPorSegundo = scanner.nextDouble();
+        double kilometrosPorHora = metrosPorSegundo * 3.6;
+        System.out.printf("Kilómetros/hora: %.2f km/h%n", kilometrosPorHora);
+    }
 }            
