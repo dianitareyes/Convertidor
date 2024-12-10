@@ -37,4 +37,14 @@ public class Convertidor {
         
         scanner.close();
     }
+
+    // Conversión de longitud
+    public static void convertirLongitud(Scanner scanner) {
+        System.out.print("Ingrese la longitud en metros: ");
+        double metros = scanner.nextDouble();
+        double centimetros = metros * 100;
+        double pulgadas = metros * 39.3701;
+        System.out.printf("Centímetros: %.2f cm%n", centimetros);
+        System.out.printf("Pulgadas: %.2f in%n", pulgadas);
+    }
 }            
